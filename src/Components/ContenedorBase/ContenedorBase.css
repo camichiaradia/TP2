@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.hero_basepadre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dedbd6;
+    padding: 70px;
+}
+
+.contenthero_basepadre{
+    width: 1128px;
+}
+
+.contenedorhero_basehijo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contenedoruno_hijo{
+    width: 400px;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #f8f5f1;
+    border: #e3e9e1 solid 1px;
+}
+
+.contenedorunoList_hijo{
+    width: 400px;
+    flex-direction: column;
+    padding: 10px;
+    height: 80px;   
+}
+
+.chatList{
+    padding: 10px;
+    height: 80px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.contenedordos_hijo{
+    width: 900px;
+    height: 555px;
+    border-radius: 20px;
+    background-color: #f8f5f1;
+    border: #e3e9e1 solid 1px;
+}
+
+.titulo_left{
+    display: flex;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.messages_contenedorheader_padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.messages_header_hijo{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 80px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.titulo_right{
+    font-size: 20px;
+    margin: 10px;
+    padding-bottom: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.chatHeader{
+    margin: 10px;
+}
+
+.chatfoto{
+    height: 60px;
+    width: 60px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ff0000;
+}
