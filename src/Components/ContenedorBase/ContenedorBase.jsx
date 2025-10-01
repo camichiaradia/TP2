@@ -36,17 +36,18 @@ function ContenedorBase(propiedades) {
                             <div className='chatfoto'>
                                 <img className="Maria" src="/foto1.jpg" alt="fotoMaria" />
                             </div>
-                            
                             <div className='chatHeader'>
                                 <h1 className='titulo_right'>Maria</h1>
                             </div>
-                            </div>
-
-                            <div>
-                                <MessagesList/>
-                            </div>
                         </div>
                     </div>
+
+                    <div className='content_message'>
+                        <div>
+                            <MessagesList/>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div> 
         </div> 

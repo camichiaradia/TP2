@@ -129,3 +129,10 @@
     background-position: center;
     object-fit: cover;
 }
+
+.content_message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 15px;
+}
