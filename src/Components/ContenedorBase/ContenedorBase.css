@@ -1,56 +1,86 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-.hero_basepadre{
+
+/* .logo_whatsapp{
+    width: 150px;
+} */
+
+.hero_contenedor{
+    background-color: #34B7F1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
-    height: 100vh;
-    background-color: #dedbd6;
-    padding: 70px;
+    justify-content: center;
+}
+
+.hero_basepadre{
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+    margin: 60px;
+    background: #fff;
+    padding: 0;
+    border-radius: 9px;
+    overflow: hidden;
 }
 
 .contenthero_basepadre{
-    width: 1128px;
+    width: 100vw;
 }
 
 .contenedorhero_basehijo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 15px;
+    width: 100%;
+    height: 550px;
 }
 
 .contenedoruno_hijo{
-    width: 400px;
+    display: flex;
+    width: 100%;
     flex-direction: column;
-    border-radius: 20px;
     background-color: #f8f5f1;
     border: #e3e9e1 solid 1px;
+    height: 550px;
 }
 
-.contenedorunoList_hijo{
-    width: 400px;
-    flex-direction: column;
-    padding: 10px;
-    height: 80px;   
+.header_chatList{
+    display: flex;
+    flex-direction: column;    
+    width: 30%;
 }
 
 .chatList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
     height: 80px;
-    border-bottom: 1px solid #c9c9c9;
+    background: #eee;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.icons_right_chatList{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    gap: 7px;
 }
 
 .contenedordos_hijo{
-    width: 900px;
+    width: 100%;
     height: 555px;
-    border-radius: 20px;
     background-color: #f8f5f1;
     border: #e3e9e1 solid 1px;
+    max-width: 70%;
+    height: 550px;
 }
 
 .titulo_left{
@@ -59,19 +89,20 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.messages_contenedorheader_padre{
+.contenedordos_header_padre{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 80px;
+    background: #eee;
+    width: 100%;
 }
 
-.messages_header_hijo{
+.header_message_hijo{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 10px 15px;
     height: 80px;
-    border-bottom: 1px solid #c9c9c9;
 }
 
 .titulo_right{
@@ -88,9 +119,13 @@
 .chatfoto{
     height: 60px;
     width: 60px;
-    height: 100%;
-    object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
-    background: #ff0000;
+}
+
+.Maria{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
 }

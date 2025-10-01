@@ -7,29 +7,34 @@ import MessagesList from '../MessagesList/MessagesList'
 function ContenedorBase(propiedades) {
     console.log(propiedades)
     return (
+    <div className='hero_contenedor'>
         <div className='hero_basepadre'>
             <div className='contenthero_basepadre'>
-                {/* <img src="" alt="" /> */}
                 <div className='contenedorhero_basehijo'>
-                    <div className='contenedoruno_hijo'>
-                        <div className='chatList'>
-                            <h1 className='titulo_left'>
-                                Chats
-                            </h1>
-                        </div>
+                    < div className='header_chatList'>
+                        <div className='contenedoruno_hijo'>
+                            <div className='chatList'>
+                                <h1 className='titulo_left'>
+                                    Chats
+                                </h1>
+                                <span className='icons_right_chatList'>
+                                    <i class="bi bi-pencil-square"></i>
+                                    <i class="bi bi-list"></i>
+                                </span>
+                            </div>
+                    </div>
+                        <div className=''>
 
-                        <div className='chatList'>
-{/*                             <MessagesList/> */}
                         </div>
 
                 </div>
 
 
                 <div className='contenedordos_hijo'>
-                    <div className='messages_contenedorheader_padre'>
-                        <div className='messages_header_hijo'>
+                    <div className='contenedordos_header_padre'>
+                        <div className='header_message_hijo'>
                             <div className='chatfoto'>
-                                <img src="/src/Static/foto1.jpg" alt="fotoMaria" />
+                                <img className="Maria" src="/foto1.jpg" alt="fotoMaria" />
                             </div>
                             
                             <div className='chatHeader'>
@@ -45,6 +50,7 @@ function ContenedorBase(propiedades) {
                 </div>
             </div> 
         </div> 
+    </div>
     )
 }
 
