@@ -3,7 +3,7 @@ import React from 'react'
 
 function Messages (propiedades){
     return(
-        <div>
+        <div className='tarjeta_chat'>
             <span>{propiedades.author}</span>
             <p>{propiedades.content}</p>
             <span>{propiedades.timestamp}</span>

@@ -2,10 +2,15 @@ import React from 'react'
 import './ContenedorBase.css'
 import ContactList from '../ContactList/ContactList'
 import MessagesList from '../MessagesList/MessagesList'
+import NewMessageForm from '../NewMessageForm/NewMessageForm'
 
 
 function ContenedorBase(propiedades) {
-    console.log(propiedades)
+
+    const onCreateNewMessage = (new_message) =>{
+        console.log=("Mesaje: ", new_message)
+    }
+
     return (
     <div className='hero_contenedor'>
         <div className='hero_basepadre'>
@@ -18,8 +23,8 @@ function ContenedorBase(propiedades) {
                                     Chats
                                 </h1>
                                 <span className='icons_right_chatList'>
-                                    <i class="bi bi-pencil-square"></i>
-                                    <i class="bi bi-list"></i>
+                                    <i className="bi bi-pencil-square"></i>
+                                    <i className="bi bi-list"></i>
                                 </span>
                             </div>
                     </div>
@@ -45,6 +50,11 @@ function ContenedorBase(propiedades) {
                     <div className='content_message'>
                         <div>
                             <MessagesList/>
+                        </div>
+                        <div>
+                            <NewMessageForm
+                            onCreateNewMessage= {onCreateNewMessage}
+                            />
                         </div>
                     </div>
                 </div>
