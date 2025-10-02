@@ -1,15 +1,46 @@
-import React from 'react'
-import './ContenedorBase.css'
-import ContactList from '../ContactList/ContactList'
-import MessagesList from '../MessagesList/MessagesList'
-import NewMessageForm from '../NewMessageForm/NewMessageForm'
+import React, { useState } from 'react'
+import "./Screen/MessageScreen.css"
+import MessagesList from '../Components/MessagesList/MessagesList'
+import NewMessageForm from '../Components/NewMessageForm/NewMessageForm'
+import ContactList from '../Components/ContactList/ContactList'
 
 
-function ContenedorBase(propiedades) {
+function MessageScreen() {
+
+    const [messages, setMessages] = useState( [
+        {
+        id: 1,
+        author: "Maria",
+        content: "Hola, como va?",
+        timestamp: "10:30 am"
+        },
+        {
+        id: 2,
+        author: "Yo",
+        content: "Bien, ustedes?",
+        timestamp: "12:00 am"
+        },
+        {
+        id: 3,
+        author: "Maria",
+        content: "Bien, Cansada.",
+        timestamp: "13:00 pm",
+        }
+        ]
+    )
+
 
     const onCreateNewMessage = (new_message) =>{
-        console.log=("Mesaje: ", new_message)
+        console.log ("Mensaje: ", new_message)
+    const new_message_object= {
+        content: new_message,
+        author: "Yo",
+        timestamp: "15:30 pm",
+        id: messages.length + 1
     }
+    
+    setMessages([...messages, new_message_object])
+}
 
     return (
     <div className='hero_contenedor'>
@@ -29,7 +60,7 @@ function ContenedorBase(propiedades) {
                             </div>
                     </div>
                         <div className=''>
-
+                            <ContactList/>
                         </div>
 
                 </div>
@@ -47,14 +78,14 @@ function ContenedorBase(propiedades) {
                         </div>
                     </div>
 
-                    <div className='content_message'>
+                    <div>
                         <div>
-                            <MessagesList/>
+                            <MessagesList 
+                            messages={messages} />
                         </div>
                         <div>
                             <NewMessageForm
-                            onCreateNewMessage= {onCreateNewMessage}
-                            />
+                            onCreateNewMessage= {onCreateNewMessage} />
                         </div>
                     </div>
                 </div>
@@ -65,4 +96,4 @@ function ContenedorBase(propiedades) {
     )
 }
 
-export default ContenedorBase
+export default MessageScreen

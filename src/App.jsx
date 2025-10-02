@@ -1,14 +1,12 @@
 import React from "react"
-import ContenedorBase from "./Components/ContenedorBase/ContenedorBase"
-import MessagesList from "./Components/MessagesList/MessagesList"
-
+import MessageScreen from "./Screen/MessageScreen"
 
 
 function App() {
   return (
     <div>
       <div>
-        <ContenedorBase/>
+        <MessageScreen/>
       </div>
     </div>
   )

@@ -81,6 +81,8 @@
     border: #e3e9e1 solid 1px;
     max-width: 70%;
     height: 550px;
+    scrollbar-width: thin;
+    overflow-y: auto;
 }
 
 .titulo_left{
@@ -136,3 +138,4 @@
     width: 100%;
     padding: 10px 15px;
 }
+

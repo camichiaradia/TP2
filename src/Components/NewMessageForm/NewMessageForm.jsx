@@ -1,6 +1,7 @@
 import React from 'react'
 import './NewMessageForm.css'
 
+
 const NewMessageForm = (props) => {
 
   const handleSubmit = (event) => {
@@ -14,9 +15,9 @@ const NewMessageForm = (props) => {
   }
 
   return (
-    <div>
+    <div className='content_formulario'>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="mensaje">Enviar mensaje</label>
+        <span><i className="bi bi-emoji-smile"></i></span>
         <textarea id="mensaje" name="mensaje"/>
         <button>Enviar mensaje</button>
       </form>
