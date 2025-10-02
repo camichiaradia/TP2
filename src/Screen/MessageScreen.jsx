@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import "./Screen/MessageScreen.css"
+import "../Screen/MessageScreen.css"
 import MessagesList from '../Components/MessagesList/MessagesList'
 import NewMessageForm from '../Components/NewMessageForm/NewMessageForm'
 import ContactList from '../Components/ContactList/ContactList'
 
 
 function MessageScreen() {
+
 
     const [messages, setMessages] = useState( [
         {
