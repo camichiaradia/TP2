@@ -15,12 +15,20 @@ const NewMessageForm = (props) => {
   }
 
   return (
-    <div className='content_formulario'>
-      <form onSubmit={handleSubmit}>
-        <span><i className="bi bi-emoji-smile"></i></span>
-        <textarea id="mensaje" name="mensaje"/>
-        <button>Enviar mensaje</button>
-      </form>
+    <div className='content_formulario_padre'>
+        <form onSubmit={handleSubmit}>
+          <div className='content_formulario_hijo'>
+            <span className='emoji_form'>
+              <i className="bi bi-emoji-smile"></i>
+            </span>
+            <textarea className='textarea_form' id="mensaje" name="mensaje"/>
+            <button className='button_enviar'>
+              <div className='icon_enviar'>
+                <i className="bi bi-send"></i>
+              </div>
+            </button>
+          </div>
+        </form>
     </div>
   )
 }

@@ -21,7 +21,9 @@ const ContactList = () => {
 
   return (
     <div className="lista-contactos">
-      <h1>Lista de Contactos</h1>
+      <h1 className='text_listcontact'>
+        Lista de Contactos
+      </h1>
     <div>{contacts_list_JSX}</div>
     </div>
   )

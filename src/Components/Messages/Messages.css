@@ -5,6 +5,17 @@
 }
 
 .tarjeta_chat{
-    width: 200px;
-    background-color: aquamarine;
+    width: 300px;
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.name_message{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p_message{
+    font-size: 12px;
 }

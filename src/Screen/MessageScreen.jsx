@@ -18,14 +18,20 @@ function MessageScreen() {
         {
         id: 2,
         author: "Yo",
-        content: "Bien, ustedes?",
+        content: "Bien, vos Mari?",
         timestamp: "12:00 am"
         },
         {
         id: 3,
         author: "Maria",
-        content: "Bien, Cansada.",
+        content: "Bien, Cansada, tuve un día largo.",
         timestamp: "13:00 pm",
+        },
+        {
+        id: 4,
+        author: "Yo",
+        content: "Uhh, bueno ahora descansa.",
+        timestamp: "13:50 pm",
         }
         ]
     )
@@ -44,12 +50,13 @@ function MessageScreen() {
 }
 
     return (
-    <div className='hero_contenedor'>
-        <div className='hero_basepadre'>
+    <div className='hero'>
+        {/* <div className='hero_basepadre'> */}
             <div className='contenthero_basepadre'>
                 <div className='contenedorhero_basehijo'>
-                    < div className='header_chatList'>
-                        <div className='contenedoruno_hijo'>
+
+                    < div className='contenedoruno_hijo'> 
+                        <div className='content_chatList'>
                             <div className='chatList'>
                                 <h1 className='titulo_left'>
                                     Chats
@@ -59,12 +66,12 @@ function MessageScreen() {
                                     <i className="bi bi-list"></i>
                                 </span>
                             </div>
-                    </div>
-                        <div className=''>
+                        </div>
+                        <div className='contenedor_list_contact'>
                             <ContactList/>
                         </div>
-
-                </div>
+                    </div>
+                
 
 
                 <div className='contenedordos_hijo'>
@@ -79,21 +86,23 @@ function MessageScreen() {
                         </div>
                     </div>
 
-                    <div>
-                        <div>
-                            <MessagesList 
-                            messages={messages} />
-                        </div>
-                        <div>
-                            <NewMessageForm
-                            onCreateNewMessage= {onCreateNewMessage} />
-                        </div>
+                    <div className='content_message'>
+                            <div className='message_list'>  
+                                <MessagesList 
+                                messages={messages} />
+                            </div> 
+
+                            <div>
+                                <NewMessageForm
+                                onCreateNewMessage= {onCreateNewMessage} />
+                            </div>
                     </div>
                 </div>
                 </div>
+                
             </div> 
-        </div> 
-    </div>
+        </div>
+    /* </div> */
     )
 }
 

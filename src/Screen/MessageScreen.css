@@ -10,26 +10,24 @@
     width: 150px;
 } */
 
-.hero_contenedor{
-    background-color: #34B7F1;
+.hero{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
 }
 
 .hero_basepadre{
     display: flex;
-    flex-direction: row;
-    height: 550px;
-    margin: 60px;
-    background: #fff;
+    flex-direction: column;
+    height: 100vh;
     padding: 0;
-    border-radius: 9px;
-    overflow: hidden;
 }
 
 .contenthero_basepadre{
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
 
 .contenedorhero_basehijo{
@@ -37,7 +35,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 550px;
+    height: 100%;
 }
 
 .contenedoruno_hijo{
@@ -46,20 +44,40 @@
     flex-direction: column;
     background-color: #f8f5f1;
     border: #e3e9e1 solid 1px;
-    height: 550px;
+    height: 100%;
+    width: 30%;
 }
 
-.header_chatList{
+.content_chatList{
     display: flex;
-    flex-direction: column;    
-    width: 30%;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    background-color: #eee;
+}
+
+.contenedor_list_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    width: 100%;
+    height: 100%;
+    background-color: #f8f5f1;
+    padding: 10px;
+}
+
+.titulo_left{
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .chatList{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
     height: 80px;
     background: #eee;
     padding: 10px 15px;
@@ -69,35 +87,34 @@
 .icons_right_chatList{
     display: flex;
     flex-direction: row;
+    justify-items: center;
+    align-items: center;
     font-size: 20px;
     color: rgb(0, 0, 0);
     gap: 7px;
+    margin: 10px;
 }
 
 .contenedordos_hijo{
+    display: flex;
+    flex-direction: column;
+    position:relative;
     width: 100%;
-    height: 555px;
+    height: 100%;
     background-color: #f8f5f1;
     border: #e3e9e1 solid 1px;
     max-width: 70%;
-    height: 550px;
     scrollbar-width: thin;
     overflow-y: auto;
-}
-
-.titulo_left{
-    display: flex;
-    font-size: 16px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .contenedordos_header_padre{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     height: 80px;
     background: #eee;
-    width: 100%;
 }
 
 .header_message_hijo{
@@ -110,7 +127,6 @@
 .titulo_right{
     font-size: 20px;
     margin: 10px;
-    padding-bottom: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -135,7 +151,22 @@
 .content_message{
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 100%;
-    padding: 10px 15px;
+    height: calc(100% - 80px);
+    padding: 10px;
 }
 
+.message_list{
+    display: flex;
+    height: 100vh;
+    padding-bottom: 80px;
+    flex-grow: 1;
+    overflow-y: auto
+}
+
+.content_form{
+    width: 100px;
+    height: 80px;
+    flex-shrink: 0; 
+}
