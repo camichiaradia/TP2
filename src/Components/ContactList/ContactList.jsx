@@ -1,32 +1,29 @@
 import React from 'react';
 import './ContactList.css'
-import Contacts, { contacts } from '../Contacts/Contacts';
+import { getAllContacts } from '../../service/ContactService';
+import { Link } from 'react-router';
+
 
 const ContactList = () => {
-
-
-  const contacts_list_JSX = contacts.map(
-  (contact) => {
+    const contacts = getAllContacts()
     return (
-      <Contacts
-      key={contact.id}
-      author={contact.author}
-      phone={contact.phone}
-      state={contact.state}
-      lastconnection={contact.state} 
-      id={contact.id}/>
+      <div>
+        {
+          contacts.map(
+            (contact) => {
+              return (
+                  <Link>
+                    <h2>{contact.name}</h2>
+                    <img src={contact.profile_img} widht={"150px"}/>
+                    <span>{contact.state}</span>
+                  </Link>
+              )
+            }
+          )
+        }
+      </div>
     )
-  }
-)
-
-  return (
-    <div className="lista-contactos">
-      <h1 className='text_listcontact'>
-        Lista de Contactos
-      </h1>
-    <div>{contacts_list_JSX}</div>
-    </div>
-  )
-}
-
+} 
 export default ContactList
+
+

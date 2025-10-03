@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import './Contacts.css'
 
 
@@ -12,8 +12,8 @@ function Contacts (propiedades){
     )
 }
 
-export default Contacts
-
+export default Contacts */
+/* 
 
 export const contacts = [
         {
@@ -37,8 +37,9 @@ export const contacts = [
         },
         {
             id: 4,
-            author: "Camila",
+            author: "Gisela",
             phone: "+54 9 11 5566-7788",
             state: "Sin información"
         }
 ]
+ */

@@ -1,14 +1,22 @@
 import React from "react"
-import "./Screen/MessageScreen.css"
-import MessageScreen from "./Screen/MessageScreen"
-
+import "./Screen/MessageScreen/MessageScreen.css"
+import MessageScreen from "./Screen/MessageScreen/MessageScreen"
+import { Route, Routes } from "react-router"
+import HomeScreen from "./Screen/HomeScreen/HomeScreen"
 
 
 function App() {
   return (
     <div>
       <div>
-        <MessageScreen/>
+        <Routes>
+          <Route path="/" 
+          element={<HomeScreen/>}
+          />
+          <Route path="/contacto/" 
+          element={<MessageScreen/>}
+          />
+        </Routes>
       </div>
     </div>
   )
