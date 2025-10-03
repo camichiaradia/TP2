@@ -4,7 +4,7 @@ const contacts= [
     {
         id:1,
         name: "Maria",
-        profile_imag:"https://cdn.culturagenial.com/es/imagenes/alegria-1.jpg?class=article",
+        profile_img:"maria.jpg",
         state: "En línea",
         messages:[
             {
@@ -36,7 +36,7 @@ const contacts= [
     {
         id:2,
         name: "Lautaro",
-        profile_imag:"https://static.wikia.nocookie.net/inside-out/images/0/0a/Anger_inside_out_2_profile.png/revision/latest?cb=20240509024224&path-prefix=es",
+        profile_img:"./lautaro.jpg",
         state: "Ayer",
         messages:[
             {
@@ -95,7 +95,7 @@ const contacts= [
     {
         id:3,
         name: "Patricio",
-        profile_imag:"https://images.cults3d.com/qvQO7mJaWSKs4UyWB9LK6Yaui5Q=/516x516/filters:no_upscale():format(webp)/https://fbi.cults3d.com/uploaders/27839498/illustration-file/847fea65-352e-4f89-8ed8-732731824797/anxiety_inside_out_2_3D-Model-Stl.jpeg",
+        profile_img:"patricio.jpg",
         state: "Disponible",
         messages:[
             {
@@ -147,7 +147,7 @@ const contacts= [
     {
         id:4,
         name: "Gisela",
-        profile_imag:"https://static.wikia.nocookie.net/inside-out/images/6/69/Envy_inside_out_2_profile.png/revision/latest?cb=20240625192950&path-prefix=es",
+        profile_img:"gisela.webp",
         state: "Hace dos días",
         messages:[
             {
@@ -185,3 +185,5 @@ const contacts= [
         ]
     }
 ]
+
+export default contacts

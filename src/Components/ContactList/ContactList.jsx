@@ -14,7 +14,7 @@ const ContactList = () => {
               return (
                   <Link>
                     <h2>{contact.name}</h2>
-                    <img src={contact.profile_img} widht={"150px"}/>
+                    <img src={contact.profile_img} widht={"50px"}/>
                     <span>{contact.state}</span>
                   </Link>
               )
