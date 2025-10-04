@@ -10,10 +10,11 @@ function App() {
     <div>
       <div>
         <Routes>
-          <Route path="/" 
+          <Route path="/*" 
           element={<HomeScreen/>}
           />
-          <Route path="/contacto/" 
+        
+          <Route path="/contacto" 
           element={<MessageScreen/>}
           />
         </Routes>
@@ -22,3 +23,5 @@ function App() {
   )
 }
 export default App
+
+

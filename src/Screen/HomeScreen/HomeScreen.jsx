@@ -3,8 +3,8 @@ import ContactList from '../../Components/ContactList/ContactList'
 
 const HomeScreen = () => {
   return (
-    <div>
-        <div className='contact-list'>
+    <div className='contenedor-contactList'>
+        <div className='contenedor-list'>
             <ContactList/>
         </div>
     </div>

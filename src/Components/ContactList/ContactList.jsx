@@ -12,11 +12,10 @@ const ContactList = () => {
           contacts.map(
             (contact) => {
               return (
-                  <Link>
-                    <h2>{contact.name}</h2>
-                    <img src={contact.profile_img} widht={"50px"}/>
-                    <span>{contact.state}</span>
-                  </Link>
+                  <ContactItem
+                      contact={contact}
+                      key={contact.id}                  
+                  />
               )
             }
           )
@@ -24,6 +23,25 @@ const ContactList = () => {
       </div>
     )
 } 
-export default ContactList
 
 
+const ContactItem= (props) => {
+  const contact = props.contact
+    return (
+      <div className='contact-list'>
+                <Link to={"/contacto"}>
+                    <div className='name_contact'>
+                      <h2>{contact.name}</h2>
+                    </div>
+                    <div className='photo_profile'>
+                      <img className="photo" src={contact.profile_img}/>
+                    </div>
+                    <span className='state_contact'>
+                      Estado: {contact.state}
+                    </span>
+                </Link>
+      </div>
+    )
+} 
+
+    export default ContactList

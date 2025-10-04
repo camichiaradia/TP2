@@ -3,6 +3,7 @@ import "../MessageScreen/MessageScreen.css"
 import MessagesList from '../../Components/MessagesList/MessagesList'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import HomeScreen from '../HomeScreen/HomeScreen'
+import { Route, Routes } from "react-router"
 
 
 function MessageScreen() {
@@ -67,8 +68,10 @@ function MessageScreen() {
                                 </span>
                             </div>
                         </div>
-                        <div className='contenedor_list_contact'>
-                            {/* <HomeScreen/> */}
+                        <div className='contenedor_list_contact'>  
+                            <div className='contenedor_HomeScreen'>
+                                <HomeScreen/>
+                            </div>
                         </div>
                     </div>
                 
