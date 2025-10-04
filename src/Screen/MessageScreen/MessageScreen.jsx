@@ -52,7 +52,6 @@ function MessageScreen() {
 
     return (
     <div className='hero'>
-        {/* <div className='hero_basepadre'> */}
             <div className='contenthero_basepadre'>
                 <div className='contenedorhero_basehijo'>
 
@@ -89,6 +88,7 @@ function MessageScreen() {
                         </div>
                     </div>
 
+
                     <div className='content_message'>
                             <div className='message_list'>  
                                 <MessagesList 
@@ -105,7 +105,6 @@ function MessageScreen() {
                 
             </div> 
         </div>
-    /* </div> */
     )
 }
 

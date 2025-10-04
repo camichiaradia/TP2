@@ -1,0 +1,84 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedordos_hijo{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f5f1;
+    border: #e3e9e1 solid 1px;
+    max-width: 70%;
+    scrollbar-width: thin;
+    overflow-y: auto;
+}
+
+.contenedordos_header_padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background: #eee;
+}
+
+.header_message_hijo{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    height: 80px;
+}
+
+.titulo_right{
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.chatHeader{
+    margin: 10px;
+}
+
+.chatfoto{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Maria{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.content_message{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 10px;
+}
+
+.message_list{
+    display: flex;
+    height: 100vh;
+    padding-bottom: 80px;
+    flex-grow: 1;
+    overflow-y: auto
+}
+
+.content_form{
+    width: 100px;
+    height: 80px;
+    flex-shrink: 0; 
+}

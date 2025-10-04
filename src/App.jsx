@@ -10,12 +10,12 @@ function App() {
     <div>
       <div>
         <Routes>
-          <Route path="/*" 
-          element={<HomeScreen/>}
+          <Route path="/" 
+          element={<MessageScreen/>}
           />
         
           <Route path="/contacto" 
-          element={<MessageScreen/>}
+          element={<HomeScreen/>}
           />
         </Routes>
       </div>
