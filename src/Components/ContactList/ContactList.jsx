@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 const ContactList = () => {
     const contacts = getAllContacts()
     return (
-      <div>
+      <div className='contenedor-contactList'>
         {
           contacts.map(
             (contact) => {

@@ -15,7 +15,7 @@ function Messages (propiedades){
 
 export default Messages
 
-
+/* 
 export const messages = [
         {
             id: 1,
@@ -42,4 +42,4 @@ export const messages = [
             phone: "+54 9 11 5566-7788",
             state: "Sin información"
         }
-] 
+]  */

@@ -5,21 +5,20 @@ import { Route, Routes } from "react-router"
 import HomeScreen from "./Screen/HomeScreen/HomeScreen"
 
 
+
 function App() {
   return (
-    <div>
       <div>
+      
         <Routes>
           <Route path="/" 
-          element={<MessageScreen/>}
+          element={ <HomeScreen/> }
           />
-        
           <Route path="/contacto" 
-          element={<HomeScreen/>}
+          element={ <MessageScreen/> }
           />
         </Routes>
       </div>
-    </div>
   )
 }
 export default App

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import './ContenedorMessage.css'
+import "./ContenedorMessage.css"
+import MessagesList from '../MessagesList/MessagesList';
+import NewMessageForm from '../NewMessageForm/NewMessageForm';
+
 
 function ContenedorMessage() {
     const [messages, setMessages] = useState( [
@@ -44,6 +47,7 @@ function ContenedorMessage() {
 }
 
     return (
+                <div className='contenedordos_hijo'>
                     <div className='content_message'>
                             <div className='message_list'>  
                                 <MessagesList 
@@ -55,6 +59,7 @@ function ContenedorMessage() {
                                 onCreateNewMessage= {onCreateNewMessage} />
                             </div>
                     </div>
+                </div>
     
     )
 }

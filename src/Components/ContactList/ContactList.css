@@ -42,3 +42,8 @@
     color:black;
     font-size: 14p
 }
+
+.contenedor-contactList{
+    width: 100%;
+    padding: 25px;
+}
