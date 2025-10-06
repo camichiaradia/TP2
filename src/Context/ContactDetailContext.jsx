@@ -9,7 +9,7 @@ export const ContactDetailContext = createContext(
     {
         isContactDetailLoading: false,
         contactDetailed: null,
-        onCreateNewMessage: (new_message) = {}
+        onCreateNewMessage: (new_message) => {}
     }
 )
 
@@ -40,6 +40,10 @@ const ContactDetailContextProvider = (props) => {
 
     
     const onCreateNewMessage = (new_message) =>{
+        if (!contactDetailed || !contactDetailed.messages) {
+            console.error("No se puede enviar el mensaje: Contacto no cargado.");
+            return;
+    }
     const new_message_object= {
         content: new_message,
         author: "Yo",
