@@ -1,6 +1,6 @@
 
-
 const contacts= [
+
     {
         id:1,
         name: "Maria",

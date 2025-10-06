@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './ContactList.css'
 import { getAllContacts } from '../../service/ContactService';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+import { ContactListContext } from '../../Context/ContactListContext';
+
 
 
 const ContactList = () => {
-    const contacts = getAllContacts()
+
+    const {contactList, isContactListLoading}= useContext(ContactListContext)
+    
     return (
       <div className='contenedor-contactList'>
         {
-          contacts.map(
+          isContactListLoading
+          ? <span>Cargando Contactos..</span>
+          : contactList.map(
             (contact) => {
               return (
                   <ContactItem
-                      contact={contact}
-                      key={contact.id}                  
+                      key={contact.id}
+                      contact={contact.id}
                   />
               )
             }
@@ -24,17 +30,17 @@ const ContactList = () => {
     )
 } 
 
-
 const ContactItem= (props) => {
-  const contact = props.contact
+  const contact= props.contact
+
     return (
       <div className='contact-list'>
-                <Link to={"/contacto"}>
+                <Link to={"/contacto/" + contact.id}>
                     <div className='name_contact'>
                       <h2>{contact.name}</h2>
                     </div>
                     <div className='photo_profile'>
-                      <img className="photo" src={contact.profile_img}/>
+                      <img className="photo" src={contact.profile_img} alt={`Foto de perfil de ${contact.name}`}/>
                     </div>
                     <span className='state_contact'>
                       Estado: {contact.state}

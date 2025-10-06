@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header_message_hijo {
+    padding: 10px 16px;
+    border-bottom: 1px solid #E9EDEF;
+    background-color: #F0F2F5; /* Fondo del encabezado */
+    display: flex;
+    align-items: center;
+    position: sticky; /* Se mantiene fijo arriba */
+    top: 0;
+    z-index: 10;
+}
+
+.chatfoto {
+    margin-right: 15px;
+}
+
+.contacto_foto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.chatHeader {
+    flex-grow: 1; /* Permite que el nombre ocupe el espacio */
+    line-height: 1.2;
+}
+
+.titulo_right {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0B141A;
+    margin: 0;
+}
+
+/* Estilo para el estado (opcional, como "en línea" o "últ. vez") */
+.status {
+    font-size: 12px;
+    color: #667781;
+}
+
+/* Iconos de acciones (llamar, videollamar, menú) */
+.chat_actions {
+    display: flex;
+    align-items: center;
+}
+
+.chat_actions i {
+    font-size: 20px;
+    color: #54656F;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.chat_actions i:hover {
+    color: #00A884; /* Color de WhatsApp al pasar el mouse */
+}

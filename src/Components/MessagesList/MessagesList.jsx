@@ -9,9 +9,8 @@ const MessagesList = (props) => {
   const messages_list_JSX = props.messages.map(
   (message) => {
     return (
-      <div>
-        <Messages
-        key={message.id}
+      <div key={message.id}>
+        <Messages        
         author={message.author}
         content={message.content}
         timestamp={message.timestamp} 
