@@ -22,7 +22,6 @@
 
 .tarjeta_chat{
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    width: 300px;
     background-color: #eee;
     padding: 10px;
     margin-bottom: 10px;
@@ -41,6 +40,7 @@
 
 .mensaje_izquierda {
     align-self: flex-start;
+    width: 300px;
 }
 
 .mensaje_izquierda .tarjeta_chat {
@@ -51,6 +51,7 @@
 
 .mensaje_derecha {
     align-self: flex-end;
+    width: 300px;
 }
 
 .mensaje_derecha .tarjeta_chat {

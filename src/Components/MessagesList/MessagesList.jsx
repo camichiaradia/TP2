@@ -9,21 +9,20 @@ const MessagesList = (props) => {
   const messages_list_JSX = props.messages.map(
   (message) => {
     return (
-      <div key={message.id} >
-        <Messages       
+      
+        <Messages     
+        key={message.id}  
         author={message.author}
         content={message.content}
         timestamp={message.timestamp} 
         id={message.id}/>
-      </div>
+      
     )
   }
 )
 
   return (
-    <div className="chat-container">
       {messages_list_JSX}
-    </div>
   )
 }
 

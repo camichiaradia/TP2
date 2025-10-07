@@ -152,7 +152,7 @@
     object-fit: cover;
 }
 
-.content_message{
+.content_message_screen{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -183,9 +183,7 @@
 }
 /* ---scroll--- */
 .message_list{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    height: auto;
     padding-bottom: 80px;
     flex-grow: 1;
     overflow-y: auto;

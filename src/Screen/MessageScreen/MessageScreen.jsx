@@ -39,7 +39,7 @@ function MessageScreen() {
                                         <ChatHeader />
                                     </div>
 
-                                    <div className='content_message'>
+                                    <div className='content_message_screen'>
                                         <div className='message_list'>  
                                         {   
                                             isContactDetailLoading

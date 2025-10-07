@@ -4,10 +4,12 @@ import './Messages.css'
 function Messages (propiedades){
 /*     const esMensajePropio = propiedades.author == "Yo"; */
 
-        return(
-
+    return(
+        
             <div className={
-                propiedades.author == "Yo" ? "mensaje_derecha" : "mensaje_izquierda"
+                propiedades.author == "Yo" 
+                ? "mensaje_derecha" 
+                : "mensaje_izquierda"
             }>
                 <div className='tarjeta_chat'>
                     <span className='name_message'>
