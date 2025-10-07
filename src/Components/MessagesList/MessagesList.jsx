@@ -21,7 +21,7 @@ const MessagesList = (props) => {
 )
 
   return (
-    <div className="chat-container"> 
+    <div className="chat-container">
       {messages_list_JSX}
     </div>
   )

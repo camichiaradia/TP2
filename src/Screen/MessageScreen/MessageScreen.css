@@ -184,11 +184,11 @@
 /* ---scroll--- */
 .message_list{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     padding-bottom: 80px;
     flex-grow: 1;
     overflow-y: auto;
-    flex-direction: column;
 }
 
 .content_form{

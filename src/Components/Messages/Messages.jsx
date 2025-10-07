@@ -2,9 +2,12 @@ import React from 'react'
 import './Messages.css'
 
 function Messages (propiedades){
+/*     const esMensajePropio = propiedades.author == "Yo"; */
+
         return(
+
             <div className={
-                propiedades.author == "Yo" ? "mensaje_izquierda" : "mensaje_derecha"
+                propiedades.author == "Yo" ? "mensaje_derecha" : "mensaje_izquierda"
             }>
                 <div className='tarjeta_chat'>
                     <span className='name_message'>
@@ -14,6 +17,7 @@ function Messages (propiedades){
                     <span>{propiedades.timestamp}</span>
                 </div>
             </div>
+
     )
 }
 
