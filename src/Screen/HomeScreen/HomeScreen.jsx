@@ -1,6 +1,5 @@
 import React from 'react'
 import ContactList from '../../Components/ContactList/ContactList'
-import ContenedorMessage from '../../Components/ContenedorMessage/ContenedorMessage'
 import "./HomeScreen.css"
 
 const HomeScreen = () => {

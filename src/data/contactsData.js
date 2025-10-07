@@ -4,7 +4,7 @@ const contacts= [
     {
         id:1,
         name: "Maria",
-        profile_img:"maria.jpg",
+        profile_img:"alegria.jpeg",
         state: "En línea",
         messages:[
             {
@@ -36,7 +36,7 @@ const contacts= [
     {
         id:2,
         name: "Lautaro",
-        profile_img:"./lautaro.jpg",
+        profile_img:"./ansiedad.jpg",
         state: "Ayer",
         messages:[
             {
@@ -95,7 +95,7 @@ const contacts= [
     {
         id:3,
         name: "Patricio",
-        profile_img:"patricio.jpg",
+        profile_img:"furia.webp",
         state: "Disponible",
         messages:[
             {
@@ -147,7 +147,7 @@ const contacts= [
     {
         id:4,
         name: "Gisela",
-        profile_img:"gisela.webp",
+        profile_img:"asco.webp",
         state: "Hace dos días",
         messages:[
             {

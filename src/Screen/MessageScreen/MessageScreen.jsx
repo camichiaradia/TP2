@@ -2,16 +2,16 @@ import React, { useContext, useEffect, useState } from 'react'
 import "../MessageScreen/MessageScreen.css"
 import MessagesList from '../../Components/MessagesList/MessagesList'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
-import ContactList from '../../Components/ContactList/ContactList'; 
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
 import ChatHeader from '../../Components/ChatHeader/ChatHeader';
+import ContactList from '../../Components/ContactList/ContactList'
 
 
 function MessageScreen() {
 
     const {isContactDetailLoading, contactDetailed, onCreateNewMessage} = useContext (ContactDetailContext)
 
-
+    console.log(contactDetailed)
     return (
             <div className='hero'>
                 <div className='contenthero_basepadre'>
@@ -29,7 +29,7 @@ function MessageScreen() {
                                         </span>
                                     </div>
                                 </div>
-
+                            <ContactList/>
                             </div>
                             
                     

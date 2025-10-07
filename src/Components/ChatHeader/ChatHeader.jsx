@@ -35,7 +35,7 @@ const ChatHeader = () => {
             <div>
                 <img 
                     className="contacto_foto" 
-                    src={contacto.profile_img || "/maria.jpg"}
+                    src={"/" + contacto.profile_img || "/maria.jpg"}
                     alt={`Foto de ${contacto.name}`} 
                 />
             </div>

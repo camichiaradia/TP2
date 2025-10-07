@@ -9,7 +9,7 @@ import { ContactListContext } from '../../Context/ContactListContext';
 const ContactList = () => {
 
     const {contactList, isContactListLoading}= useContext(ContactListContext)
-    
+    console.log(contactList)
     return (
       <ul className='contenedor-contactList'>
         {
@@ -42,7 +42,7 @@ const contact= props.contact;
                       <h2>{contact.name}</h2>
                     </div>
                     <div className='photo_profile'>
-                      <img className="photo" src={contact.profile_img} alt={`Foto de perfil de ${contact.name}`}/>
+                      <img className="photo" src={"/" + contact.profile_img} alt={`Foto de perfil de ${contact.name}`}/>
                     </div>
                     <span className='state_contact'>
                       Estado: {contact.state}
