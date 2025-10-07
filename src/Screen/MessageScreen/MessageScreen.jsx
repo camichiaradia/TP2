@@ -7,9 +7,6 @@ import { ContactDetailContext } from '../../Context/ContactDetailContext'
 import ChatHeader from '../../Components/ChatHeader/ChatHeader';
 
 
-
-
-
 function MessageScreen() {
 
     const {isContactDetailLoading, contactDetailed, onCreateNewMessage} = useContext (ContactDetailContext)
@@ -32,12 +29,12 @@ function MessageScreen() {
                                         </span>
                                     </div>
                                 </div>
-                            <ContactList/>
+
                             </div>
                             
                     
                             <div className='contenedordos_hijo'>
- 
+
                                     <div className='header_message_hijo'>
                                         <ChatHeader />
                                     </div>
@@ -50,7 +47,7 @@ function MessageScreen() {
                                             : (
                                                 contactDetailed
                                                 ? <MessagesList 
-                                                messages= {contactDetailed.messages} />
+                                                messages= {contactDetailed.messages || []} />
                                                 : <span>Contacto no encontrado</span>
                                             )
                                         } 

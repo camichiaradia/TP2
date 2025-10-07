@@ -1,11 +1,12 @@
 import { createContext, useEffect, useState } from "react";
-import { getAllContacts } from "../service/ContactService";
+import { getAllContacts, getContactById } from "../service/ContactService";
 
 
 export const ContactListContext = createContext(
     {
         contactList: [],
         isContactListLoading: false,
+        getContactById: (id) => {} 
     }
 )
 
@@ -43,7 +44,8 @@ const ContactListContextProvider = (props) => {
             value={
                 {
                     contactList: contactList,
-                    isContactListLoading: isContactListLoading
+                    isContactListLoading: isContactListLoading,
+                    getContactById: getContactById,
                 }
             }
         >

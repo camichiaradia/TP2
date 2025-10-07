@@ -19,23 +19,23 @@ const ChatHeader = () => {
         }
     }, [id_contacto, getContactById]);
 
-    if (!contacto) {
+   if (!contacto) {
         return (
             <div className='header_message_hijo'>
                 <div className='chatHeader'>
-                    <h1 className='titulo_right'>Selecciona un Chat</h1>
+                    <h1 className='titulo_right'>Cargando...</h1>
                 </div>
             </div>
         );
     }
-    
-    return (
-        <div className='header_message_hijo'>
-            <div className='chatfoto'>
 
+
+    return (
+        <div className='header_message_hijo'>        
+            <div>
                 <img 
                     className="contacto_foto" 
-                    src={contacto.profile_img || "/foto1.jpg"}
+                    src={contacto.profile_img || "/maria.jpg"}
                     alt={`Foto de ${contacto.name}`} 
                 />
             </div>

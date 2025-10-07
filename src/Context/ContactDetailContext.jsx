@@ -1,6 +1,8 @@
 import { createContext, useEffect, useState } from "react";
-import { Outlet, useParams } from "react-router";
+/* import { Outlet, useParams } from "react-router"; */
 import { getContactById } from "../service/ContactService";
+import { useParams } from "react-router"; 
+
 
 
 export const ContactDetailContext = createContext(
@@ -31,7 +33,11 @@ const ContactDetailContextProvider = (props) => {
 
     useEffect(
         ()=> {
+            if(id_contacto) {
             loadContactById(id_contacto)
+            } else {
+                setContactDetailed(null);
+            }
         },
         [id_contacto]
     )
@@ -64,7 +70,7 @@ const ContactDetailContextProvider = (props) => {
                 }
             }
         >
-            <Outlet/>
+            {props.children} 
         </ContactDetailContext.Provider>
     )
 }

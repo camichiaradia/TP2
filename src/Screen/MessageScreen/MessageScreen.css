@@ -157,16 +157,38 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: calc(100% - 80px);
+    height: calc(100% - 150px);
     padding: 10px;
+    overflow-y: scroll;
+}
+/* ---scroll--- */
+.content_message::-webkit-scrollbar {
+    width: 8px;
 }
 
+/* Define el color del 'track' (el camino por donde se mueve la barra) */
+.content_message::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Define el color del 'thumb' (el control que se mueve) */
+.content_message::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+/* Cambia el color cuando el usuario pasa el ratón por el 'thumb' */
+.content_message::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* ---scroll--- */
 .message_list{
     display: flex;
     height: 100vh;
     padding-bottom: 80px;
     flex-grow: 1;
-    overflow-y: auto
+    overflow-y: auto;
+    flex-direction: column;
 }
 
 .content_form{

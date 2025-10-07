@@ -6,15 +6,17 @@
 
 
 .header_message_hijo {
-    padding: 10px 16px;
-    border-bottom: 1px solid #E9EDEF;
-    background-color: #F0F2F5; /* Fondo del encabezado */
     display: flex;
     align-items: center;
-    position: sticky; /* Se mantiene fijo arriba */
-    top: 0;
-    z-index: 10;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 15px;
+    background-color: #eee;
+    border-bottom: 1px solid #e2e2e2; /* Separador */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
 }
+
 
 .chatfoto {
     margin-right: 15px;
@@ -24,29 +26,34 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
+    object-fit: cover; 
+    margin-right: 15px; /* Espacio entre la foto y el nombre */
 }
 
+
 .chatHeader {
-    flex-grow: 1; /* Permite que el nombre ocupe el espacio */
-    line-height: 1.2;
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
 }
 
 .titulo_right {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    color: #0B141A;
+    color: #1c1e21;
     margin: 0;
+    /* Ajuste para el estado de "Cargando..." */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-/* Estilo para el estado (opcional, como "en línea" o "últ. vez") */
 .status {
     font-size: 12px;
     color: #667781;
 }
 
-/* Iconos de acciones (llamar, videollamar, menú) */
+
 .chat_actions {
     display: flex;
     align-items: center;
@@ -60,5 +67,5 @@
 }
 
 .chat_actions i:hover {
-    color: #00A884; /* Color de WhatsApp al pasar el mouse */
+    color: #00A884; 
 }

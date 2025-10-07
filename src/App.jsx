@@ -17,14 +17,15 @@ function App() {
             <Route path="/" 
             element={ <HomeScreen/> }
             />
-            <Route
-            element={<ContactDetailContextProvider/>}
-            > 
+
               <Route
               path="/contacto/:id_contacto" 
-              element={ <MessageScreen/> }
+              element={ 
+                <ContactDetailContextProvider>
+                  <MessageScreen/> 
+                </ContactDetailContextProvider>
+              }
               />
-            </Route>
 
           </Routes>
         </ContactListContextProvider>
