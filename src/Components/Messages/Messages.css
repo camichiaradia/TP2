@@ -4,7 +4,24 @@
     margin: 0;
 }
 
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    width: 100%; 
+    padding: 10px;
+}
+
+.mensaje_izquierda,
+.mensaje_derecha {
+    /* Define el ancho máximo del globo de mensaje */
+    max-width: 75%; 
+    /* Elimina el margen por defecto y define el propio */
+    margin: 0; 
+}
+
 .tarjeta_chat{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     width: 300px;
     background-color: #eee;
     padding: 10px;
@@ -16,6 +33,47 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.p_message{
-    font-size: 12px;
+.p_message {
+    font-size: 16px;
+    margin: 5px 0; /* Espacio alrededor del contenido principal */
+    word-wrap: break-word; /* Ajuste de línea para texto largo */
+}
+
+.mensaje_izquierda {
+    align-self: flex-start;
+}
+
+.mensaje_izquierda .tarjeta_chat {
+    background-color: #ffd1e3;
+    color: #333;
+    border-bottom-right-radius: 5px; 
+}
+
+.mensaje_derecha {
+    align-self: flex-end;
+}
+
+.mensaje_derecha .tarjeta_chat {
+    background-color: #e0e0e0;
+    color: #333;
+    border-bottom-left-radius: 5px; 
+}
+
+.name_message {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 2px;
+}
+
+.mensaje_derecha span {
+    color:#973c60 (0, 0, 10, 0.6)
+}
+
+.mensaje_izquierda span {
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+.time{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
 }
