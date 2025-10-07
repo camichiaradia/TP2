@@ -11,31 +11,33 @@ const ContactList = () => {
     const {contactList, isContactListLoading}= useContext(ContactListContext)
     
     return (
-      <div className='contenedor-contactList'>
+      <ul className='contenedor-contactList'>
         {
           isContactListLoading
-          ? <span>Cargando Contactos..</span>
+          ? <span>Cargando contactos..</span>
           : contactList.map(
             (contact) => {
               return (
                   <ContactItem
                       key={contact.id}
-                      contact={contact.id}
+                      name={contact.name}
+                      profile_img={contact.profile_img}
+                      contact={contact}
                   />
               )
             }
           )
         }
-      </div>
+      </ul>
     )
 } 
 
 const ContactItem= (props) => {
-  const contact= props.contact
+const contact= props.contact;
 
     return (
-      <div className='contact-list'>
-                <Link to={"/contacto/" + contact.id}>
+      <li className='contact-list'>
+                <Link to={`/contacto/${contact.id}`}>
                     <div className='name_contact'>
                       <h2>{contact.name}</h2>
                     </div>
@@ -46,7 +48,7 @@ const ContactItem= (props) => {
                       Estado: {contact.state}
                     </span>
                 </Link>
-      </div>
+      </li>
     )
 } 
 

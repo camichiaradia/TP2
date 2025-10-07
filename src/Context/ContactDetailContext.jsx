@@ -1,8 +1,6 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { Outlet, useParams } from "react-router";
 import { getContactById } from "../service/ContactService";
-import { useEffect } from "react";
-
 
 
 export const ContactDetailContext = createContext(
@@ -11,7 +9,7 @@ export const ContactDetailContext = createContext(
         contactDetailed: null,
         onCreateNewMessage: (new_message) => {}
     }
-)
+);
 
 const ContactDetailContextProvider = (props) => {
     
@@ -55,8 +53,6 @@ const ContactDetailContextProvider = (props) => {
         messages_cloned.push(new_message_object)
         setContactDetailed({...contactDetailed, messages: messages_cloned})
     }
-
-
 
     return(
         <ContactDetailContext.Provider

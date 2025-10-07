@@ -4,6 +4,7 @@ import MessagesList from '../../Components/MessagesList/MessagesList'
 import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import ContactList from '../../Components/ContactList/ContactList'; 
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
+import ChatHeader from '../../Components/ChatHeader/ChatHeader';
 
 
 
@@ -36,10 +37,10 @@ function MessageScreen() {
                             
                     
                             <div className='contenedordos_hijo'>
-{/* 
+ 
                                     <div className='header_message_hijo'>
                                         <ChatHeader />
-                                    </div>  */}
+                                    </div>
 
                                     <div className='content_message'>
                                         <div className='message_list'>  
