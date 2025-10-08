@@ -14,7 +14,10 @@ const ContactList = () => {
       <ul className='contenedor-contactList'>
         {
           isContactListLoading
-          ? <span> Cargando contactos..</span>
+          ? <div className='loading-spinner-container-chat'> 
+              <i className="bi bi-arrow-clockwise spinner-animation-chat"></i>
+              <span className='text_espera'> Cargando contacto...</span>
+            </div>
           :  contactList.map(
             (contact) => {
               return (

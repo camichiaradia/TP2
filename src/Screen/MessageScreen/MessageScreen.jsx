@@ -43,7 +43,10 @@ function MessageScreen() {
                                         <div className='message_list'>  
                                         {   
                                             isContactDetailLoading
-                                            ? <span className='text_espera'>Cargando chat..</span>
+                                            ? <div className='loading-spinner-container-chat'> 
+                                                    <i className="bi bi-arrow-clockwise spinner-animation-chat"></i>
+                                                    <span className='text_espera'> Cargando chat...</span>
+                                                </div>
                                             :  (
                                                 contactDetailed
                                                 ? <MessagesList 
