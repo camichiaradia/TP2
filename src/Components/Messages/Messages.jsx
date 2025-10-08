@@ -16,7 +16,7 @@ function Messages (propiedades){
                         {propiedades.author}
                     </span>
                     <p className='p_message'>{propiedades.content}</p>
-                    <span>{propiedades.timestamp}</span>
+                    <span className='p_time'>{propiedades.timestamp}</span>
                 </div>
             </div>
 

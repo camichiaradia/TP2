@@ -3,7 +3,8 @@ import ContactList from '../../Components/ContactList/ContactList'
 import "./HomeScreen.css"
 
 const HomeScreen = () => {
-  return (
+
+    return (
             <div className='hero'>
                 <div className='contenthero_basepadre'>
                     <div className='contenedorhero_basehijo'>
@@ -25,10 +26,13 @@ const HomeScreen = () => {
                             
                     
                         <div className='contenedordos_hijo'>
-                                <div className='contectdos_text'>
-                                    <span className='texto-noselect'> 
-                                    No hay contacto seleccionado. 
-                                    </span>
+                                <div className='contenedordos_text'>
+                                    <div className='content_hijo'>
+                                        <span className='texto-noselect'> 
+                                        ¡Bienvenidos al Chat de Whatsapp! 
+                                        </span>
+                                        <img className="logo-wp" src="./whatsapp.svg"></img>
+                                    </div>
                                 </div>
 
 

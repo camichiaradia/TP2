@@ -27,16 +27,6 @@
     margin-bottom: 10px;
 }
 
-.name_message{
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.p_message {
-    font-size: 16px;
-    margin: 5px 0; /* Espacio alrededor del contenido principal */
-    word-wrap: break-word; /* Ajuste de línea para texto largo */
-}
 
 .mensaje_izquierda {
     align-self: flex-start;
@@ -44,7 +34,7 @@
 }
 
 .mensaje_izquierda .tarjeta_chat {
-    background-color: #ffd1e3;
+    background-color: #dcf8c6;
     color: #333;
     border-bottom-left-radius: 5px; 
 }
@@ -55,26 +45,41 @@
 }
 
 .mensaje_derecha .tarjeta_chat {
-    background-color: #e0e0e0;
+    background-color: #f3f1f1;
     color: #333;
     border-bottom-right-radius: 5px; 
 }
 
 .name_message {
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1.2em;
     margin-bottom: 2px;
 }
 
 .mensaje_derecha span {
-    color:rgb(151, 60, 96, 0.6);
+    color:#128c7e;
 }
 
 .mensaje_izquierda span {
-    color: rgba(0, 0, 0, 0.6); 
+    color: #8422c6;
 }
 
-.time{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.p_time{
+    font-family: "Roboto";
     font-size: 10px;
+    font-weight: 500;
+}
+.name_message{
+    font-size: 15px;
+    font-family: "Roboto";
+}
+
+.p_message { 
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 15px;
+    margin: 5px 0; /* Espacio alrededor del contenido principal  */
+    word-wrap: break-word; /* Ajuste de  línea para texto largo */
+    align-self: flex-end;
 }

@@ -4,11 +4,6 @@
     margin: 0;
 }
 
-
-/* .logo_whatsapp{
-    width: 150px;
-} */
-
 .hero{
     display: flex;
     flex-direction: column;
@@ -86,14 +81,6 @@
     width: 100%;
 }
 
-/* /* .contenedor-list{
-    display: flex;
-    flex-direction: column;
-    width: 100vw; 
-    height: 30px;
-
-} */
-
 .contenedor-contactList{
     width: 100%;
     padding: 10px;
@@ -103,28 +90,38 @@
 
 .contenedordos_hijo{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     position:relative;
     background-color: #f8f5f1;
     border: #e3e9e1 solid 1px;
-    width: 70%;
-    scrollbar-width: thin;
-    overflow-y: auto;
     height: 100vh;
+    width: 100%;
 }
 
-.contectdos_text{
+.content_hijo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
     width: 100%;
-    height: 100%;
-    text-align: center;
+}
+
+.contenedordos_text{
+    display: flex;
+    flex-shrink: 0; 
+    margin: auto; 
+    width: 100%;
+}
+
+.logo-wp{
+    width: 150px;
 }
 
 .texto-noselect{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    display: block;
+    text-align: center;
+    font-family: "Roboto";
     font-size: 14px;
 }
 

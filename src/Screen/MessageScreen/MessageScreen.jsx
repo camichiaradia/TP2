@@ -43,8 +43,8 @@ function MessageScreen() {
                                         <div className='message_list'>  
                                         {   
                                             isContactDetailLoading
-                                            ? <span>Cargando..</span>
-                                            : (
+                                            ? <span className='text_espera'>Cargando chat..</span>
+                                            :  (
                                                 contactDetailed
                                                 ? <MessagesList 
                                                 messages= {contactDetailed.messages || []} />
@@ -54,7 +54,7 @@ function MessageScreen() {
                                         </div> 
                                     </div>
 
-                                    <div>
+                                    <div className='formulario_padre'>
                                         <NewMessageForm
                                         onCreateNewMessage= {onCreateNewMessage} />
                                     </div>

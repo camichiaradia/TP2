@@ -14,8 +14,8 @@ const ContactList = () => {
       <ul className='contenedor-contactList'>
         {
           isContactListLoading
-          ? <span>Cargando contactos..</span>
-          : contactList.map(
+          ? <span> Cargando contactos..</span>
+          :  contactList.map(
             (contact) => {
               return (
                   <ContactItem

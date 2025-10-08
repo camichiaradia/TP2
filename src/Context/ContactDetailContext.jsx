@@ -51,7 +51,7 @@ const ContactDetailContextProvider = (props) => {
     const new_message_object= {
         content: new_message,
         author: "Yo",
-        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'}),
         id: contactDetailed.messages.length + 1
         
     }
