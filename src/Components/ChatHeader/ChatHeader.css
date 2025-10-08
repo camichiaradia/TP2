@@ -12,11 +12,28 @@
     height: 80px;
     padding: 0 15px;
     background-color: #eee;
-    border-bottom: 1px solid #e2e2e2; /* Separador */
+    border-bottom: 1px solid #e2e2e2;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-
 }
 
+.info-group {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.back-arrow-button {
+    background: none;
+    border: none;
+    font-size: 30px; 
+    color: #333; 
+    cursor: pointer;
+    padding: 0;
+}
+
+.back-arrow-button:hover {
+    color: #128c7e;
+}
 
 .chatfoto {
     margin-right: 15px;
@@ -27,7 +44,6 @@
     height: 40px;
     border-radius: 50%;
     object-fit: cover; 
-    margin-right: 15px; /* Espacio entre la foto y el nombre */
 }
 
 

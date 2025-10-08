@@ -31,8 +31,15 @@ const ChatHeader = () => {
 
 
     return (
-        <div className='header_message_hijo'>        
-            <div>
+        <div className='header_message_hijo'>  
+            <div className='info-group'>
+                <button 
+                    className='back-arrow-button' 
+                    onClick={() => console.log('Botón de Volver presionado')}
+                >
+                    <i className="bi bi-arrow-left-short"></i>
+                </button>
+
                 <img 
                     className="contacto_foto" 
                     src={"/" + contacto.profile_img || "/maria.jpg"}
