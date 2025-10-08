@@ -12,7 +12,7 @@
     height: 60px;
     width: 100%;
     padding: 10px 15px;
-    background-color: #ffd1e3;
+    background-color: #eee;
     border-top: 1px solid #ddd;
     margin-top: 10px;
     border-radius: 50px;
@@ -50,14 +50,22 @@
 }
 
 .button_enviar{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     flex-shrink: 0;
-    background-color: #000000;
+    background-color: #c7ffa0;
     color: white;
     border: none;
     border-radius: 50%;
-    text-indent: -9999px;
     cursor: pointer;
-    color: #ddd;
+    font-size: 1.2rem;
+
+}
+
+.button_enviar i {
+    color: #000000;
+    text-indent: 0;
 }

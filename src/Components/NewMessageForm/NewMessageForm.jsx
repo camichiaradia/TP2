@@ -23,9 +23,7 @@ const NewMessageForm = (props) => {
             </span>
             <textarea className='textarea_form' id="mensaje" name="mensaje"/>
             <button className='button_enviar'>
-              <div className='icon_enviar'>
                 <i className="bi bi-send"></i>
-              </div>
             </button>
           </div>
         </form>

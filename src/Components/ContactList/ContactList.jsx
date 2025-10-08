@@ -40,13 +40,14 @@ const contact= props.contact;
                 <Link to={`/contacto/${contact.id}`}>
                     <div className='name_contact'>
                       <h2>{contact.name}</h2>
+                      <span className='state_contact'>
+                      Estado: {contact.state}
+                      </span>
                     </div>
                     <div className='photo_profile'>
                       <img className="photo" src={"/" + contact.profile_img} alt={`Foto de perfil de ${contact.name}`}/>
                     </div>
-                    <span className='state_contact'>
-                      Estado: {contact.state}
-                    </span>
+                    
                 </Link>
       </li>
     )
