@@ -39,10 +39,9 @@ function MessageScreen() {
                             <ContactList/>
                             </div>
                             
-                        <div className="contenedordos_padre_ms">
-                            <div className={`contenedordos_hijo_ms ${isChatDetailHidden 
-                            ? 'mobile-hidden' 
-                            : ''}`}>
+                        <div className={`contenedordos_padre_ms ${isChatDetailHidden ? 'mobile-hidden' : ''}`}> 
+                        
+                        <div className='contenedordos_hijo_ms'> 
 
                                     <div className='header_message_hijo'>
                                         <ChatHeader />

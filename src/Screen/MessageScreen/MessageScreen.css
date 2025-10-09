@@ -21,9 +21,8 @@
     }
 
 
-
     .mobile-hidden {
-        display: none;
+        display: none !important;
     }
 
     /* COLUMNA 1: LISTA DE CONTACTOS (contenedoruno_hijo) */
@@ -43,9 +42,10 @@
     /* COLUMNA 2: CHAT ACTIVO (contenedordos_hijo) */
 
     .contenedordos_padre_ms{
-        display: none;
+        display: flex;
         width: 100%; 
         height: 100%;
+        flex-direction: column;
     }
 
     .contenedordos_hijo_ms {

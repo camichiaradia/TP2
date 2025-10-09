@@ -34,8 +34,6 @@ const HomeScreen = () => {
                                         <img className="logo-wp" src="./whatsapp.svg"></img>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                 </div>
