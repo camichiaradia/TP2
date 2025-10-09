@@ -27,7 +27,7 @@ const HomeScreen = () => {
                     
                         <div className='contenedordos_hijo'>
                                 <div className='contenedordos_text'>
-                                    <div className='content_hijo'>
+                                    <div className='content_hijo_home'>
                                         <span className='texto-noselect'> 
                                         ¡Bienvenidos al Chat de Whatsapp! 
                                         </span>
