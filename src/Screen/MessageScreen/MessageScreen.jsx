@@ -5,19 +5,26 @@ import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm'
 import { ContactDetailContext } from '../../Context/ContactDetailContext'
 import ChatHeader from '../../Components/ChatHeader/ChatHeader';
 import ContactList from '../../Components/ContactList/ContactList'
-
+import { useParams } from 'react-router-dom'; 
 
 function MessageScreen() {
 
     const {isContactDetailLoading, contactDetailed, onCreateNewMessage} = useContext (ContactDetailContext)
+    const {id_contacto} = useParams(); 
+    const isContactListHidden = !!id_contacto; 
+    const isChatDetailHidden = !id_contacto; 
 
-    console.log(contactDetailed)
+    
+    /* console.log(contactDetailed) */
     return (
             <div className='hero'>
                 <div className='contenthero_basepadre'>
                     <div className='contenedorhero_basehijo'>
 
-                            <div className='contenedoruno_hijo'> 
+                            <div className={`contenedoruno_hijo ${isContactListHidden 
+                            ? 'mobile-hidden' 
+                            : ''}`}> 
+
                                 <div className='content_chatList'>
                                     <div className='chatList'>
                                         <h1 className='titulo_left'>
@@ -33,7 +40,9 @@ function MessageScreen() {
                             </div>
                             
                     
-                            <div className='contenedordos_hijo'>
+                            <div className={`contenedordos_hijo ${isChatDetailHidden 
+                            ? 'mobile-hidden' 
+                            : ''}`}>
 
                                     <div className='header_message_hijo'>
                                         <ChatHeader />
@@ -57,10 +66,12 @@ function MessageScreen() {
                                         </div> 
                                     </div>
 
+                                    {contactDetailed && (
                                     <div className='formulario_padre'>
                                         <NewMessageForm
                                         onCreateNewMessage= {onCreateNewMessage} />
                                     </div>
+                                    )}
                                     
                             </div>
                     </div>

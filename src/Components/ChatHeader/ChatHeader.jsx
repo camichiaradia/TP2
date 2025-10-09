@@ -1,11 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { ContactListContext } from '../../Context/ContactListContext';
 import './ChatHeader.css'; 
 
 const ChatHeader = () => {
 
     const { id_contacto } = useParams();
+    const navigate = useNavigate();
     const { getContactById } = useContext(ContactListContext); 
     const [contacto, setContacto] = useState(null);
 
@@ -35,7 +36,7 @@ const ChatHeader = () => {
             <div className='info-group'>
                 <button 
                     className='back-arrow-button' 
-                    onClick={() => console.log('Botón de Volver presionado')}
+                    onClick={() => navigate('/')}
                 >
                     <i className="bi bi-arrow-left-short"></i>
                 </button>

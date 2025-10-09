@@ -1,10 +1,164 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
+/* RESPONSIVE Mobile (Hasta 575px)*/
+
+/* ---------- INICIA ACÁ ---------- */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
 }
 
-.hero{
+.contenthero_basepadre,
+.contenedorhero_basehijo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+/* 
+
+@media (min-width: 380px) {
+     */
+/* ------------------------------------------- */
+/* COLUMNA 1: LISTA DE CONTACTOS (contenedoruno_hijo) */
+/* ------------------------------------------- */
+.contenedoruno_hijo {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f5f1;
+    border: #e3e9e1 solid 1px;
+}
+
+.content_chatList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    background-color: #eee;
+    flex-shrink: 0;
+}
+
+.titulo_left {
+    font-size: 18px; 
+}
+
+/* ------------------------------------------- */
+/* COLUMNA 2: BIENVENIDA (contenedordos_hijo) */
+/* ------------------------------------------- */
+.contenedordos_hijo {
+    display: none; 
+    width: 0;
+    height: 0;
+}
+
+
+/* ------------------------------------------- */
+/* MEDIA QUERY: 768px (Tabletas - VISTA DOBLE COLUMNA) */
+/* ------------------------------------------- */
+@media (min-width: 768px) {
+    
+    /* Revertimos el contenedor base a la vista horizontal */
+    .contenedorhero_basehijo {
+        flex-direction: row; 
+    }
+    
+    /* COLUMNA 1: Lista de Contactos */
+
+    .contenedorhero_basehijo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    }
+
+    .contenedoruno_hijo{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: #f8f5f1;
+        border: #e3e9e1 solid 1px;
+        height: 100%;
+        width: 30%;
+    }
+
+    /* COLUMNA 2: Mensaje de Bienvenida - VISIBLE */
+
+    .contenedordos_hijo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        background-color: #f8f5f1;
+        border: #e3e9e1 solid 1px;
+        height: 100vh;
+        width: 70%;
+    }
+
+    .titulo_left {
+        font-size: 22px;
+    }
+
+    .contenedor_HomeScreen{
+        width: 100%;
+    }
+
+    .titulo_left{
+        font-size: 20px;
+        margin: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    
+    .content_hijo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        width: 100%;
+    }
+
+    .contenedordos_text{
+        display: flex;
+        flex-shrink: 0; 
+        margin: auto; 
+        width: 100%;
+    }
+
+    .logo-wp{
+        width: 150px;
+    }
+
+    .texto-noselect{
+        display: block;
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 14px;
+    }
+
+    .content_chatList{
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid #e2e2e2;
+    
+    } 
+
+
+}
+
+
+/* ------------------------------------------- */
+/* MEDIA QUERY: 1024px (Escritorio / Laptops) */
+/* ------------------------------------------- */
+/* @media (min-width: 1024px)  */
+
+
+/* ---------- INICIA ACÁ ---------- */
+/* .hero{
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -128,5 +282,6 @@
 .content_chatList{
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid #e2e2e2;
-}
+} */
 
+/* ---------- TERMINA ACÁ ---------- */
