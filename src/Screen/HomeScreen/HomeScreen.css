@@ -1,7 +1,7 @@
 /* ---------- INICIA ACÁ ---------- */
 /* MEDIA QUERY: 380px (RESPONSIVE Mobile) */
 
-/* @media (min-width: 380px) { */
+/* @media (min-width: 320px) { */
     .hero{
     display: flex;
     flex-direction: column;
@@ -84,6 +84,8 @@
     .contenedordos_hijo {
         display: none; 
     }
+
+    
 
 /* } */
 
