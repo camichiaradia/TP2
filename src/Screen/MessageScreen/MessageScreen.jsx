@@ -59,19 +59,20 @@ function MessageScreen() {
                                             :  (
                                                 contactDetailed
                                                 ? <MessagesList 
+                                            
                                                 messages= {contactDetailed.messages || []} />
                                                 : <span>Contacto no encontrado</span>
+                                                
                                             )
                                         } 
                                         </div> 
                                     </div>
 
-                                    {contactDetailed && (
-                                    <div className='formulario_padre'>
-                                        <NewMessageForm
-                                        onCreateNewMessage= {onCreateNewMessage} />
-                                    </div>
-                                    )}
+                                <div className='formulario_padre'>
+                                    <NewMessageForm
+                                    onCreateNewMessage= {onCreateNewMessage} />         
+                                </div>
+                                    
                                     
                             </div>
                     </div>

@@ -1,6 +1,6 @@
 
 /* ---------- INICIA ACÁ ---------- */
-/* MEDIA QUERY: 380px (RESPONSIVE Mobile) */
+/* RESPONSIVE Mobile */
 
 @media (min-width: 380px) {
     .hero {
@@ -20,10 +20,8 @@
         padding: 0px;
     }
 
-
-    /* Esta clase oculta el elemento */
     .mobile-hidden {
-        display: none !important;
+        display: none;
     }
 
     /* COLUMNA 1: LISTA DE CONTACTOS (contenedoruno_hijo) */
@@ -372,166 +370,3 @@
 
 
 /* ---------- TERMINA ACÁ ---------- */
-/* .hero{
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
-}
-
-.hero_basepadre{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 0;
-}
-
-.contenthero_basepadre{
-    width: 100%;
-    height: 100%;
-} */
-/* 
-.contenedorhero_basehijo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-}
-
-
-.contenedoruno_hijo{
-    display: flex;
-    border: #e3e9e1 solid 1px;
-    width: 30%;
-}
-
-.content_chatList{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80px;
-    background-color: #eee;
-}
-
-.contenedor_list_contact{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;   
-    width: 100%;
-    height: 100%;
-    background-color: #f8f5f1;
-    padding: 10px;
-}
- */
-
-
-/* 
-.contenedordos_hijo{
-    display: flex;
-    flex-direction: column;
-    position:relative;
-    width: 100%;
-    height: 100%;
-    background-color: #f8f5f1;
-    border: #e3e9e1 solid 1px;
-    scrollbar-width: thin;
-    overflow-y: auto;
-}
-
-.contenedordos_header_padre{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    background: #eee;
-}
-
-.header_message_hijo{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 15px;
-    width: 100%;
-    height: 80px;
-}
- */
-
-/* ---scroll--- */
-
-/* .message_list{
-    height: auto;
-    padding-bottom: 80px;
-    flex-grow: 1;
-    overflow-y: auto;
-    z-index: 2; 
-    position: relative; 
-}
-
-.content_form{
-    width: 100%;
-    height: 80px;
-    flex-shrink: 0; 
-}
-
-.formulario_padre{
-    display: flex;
-    flex-direction: column;
-    height: 80px;
-    width: 100%;
-    padding: 10px 15px;
-}
-
-.text_espera{
-    font-family: "Roboto";
-    font-size: 10px;
-}
- */
-/* Animación del Loading en la lista de mensajes */
-/* 
-.loading-spinner-container-chat {
-    width: 100%;
-    height: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #128c7e;
-    font-size: 1.1em;
-}
-
-.spinner-animation-chat {
-    font-size: 2em; 
-    margin-bottom: 15px;
-    animation: spin-chat 1s linear infinite; 
-}
-
-@keyframes spin-chat {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-
-.loading-spinner-container-chat .text_espera {
-    font-size: 14px;
-    font-family: "Roboto";
-    margin-top: 15px;
-    font-weight: 400;
-}
-
-.loading-spinner-container-chat {
-    font-family: "Roboto";
-}
- */
-
-/*     escritorio */
-/*  @media screen and (min-width: 1440px){
-    .section_button_fixed{
-        display: flex;
-    }
-}  */
