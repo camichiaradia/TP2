@@ -9,7 +9,6 @@
 .content_formulario_padre{
     display: flex;
     flex-direction: column;
-    height: 80px;
     width: 100%;
     background-color: #eee;
     margin-bottom: 10px;
@@ -51,6 +50,7 @@
     outline: none;
     overflow: hidden;
     max-height: 150px;
+    font-family: "Roboto";
 }
 
 .button_enviar{

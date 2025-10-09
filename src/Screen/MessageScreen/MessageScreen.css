@@ -42,7 +42,7 @@
 
     /* COLUMNA 2: CHAT ACTIVO (contenedordos_hijo) */
 
-    .contenedordos_hijo {
+    .contenedordos_hijo_ms {
         width: 100%; 
         height: 100%;
         overflow-y: hidden;
@@ -53,12 +53,45 @@
         padding: 10px 10px;
         gap: 20px;
         width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
-    .content_message_screen {
+
+    .content_message_screen{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
         height: calc(100% - 160px);
-        padding: 5px;
+        background-image: url('/foto_wp.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-attachment: fixed; 
+        z-index: 0;
     }
+
+    .content_message_screen::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(240, 237, 235, 0.9);
+    }
+
+    .message_list{
+    height: auto;
+    padding-bottom: 80px;
+    flex-grow: 1;
+    overflow-y: auto;
+    z-index: 2; 
+    position: relative;
+    padding: 10px 20px;
+    }
+    
 
     .formulario_padre {
         height: 80px;
@@ -88,6 +121,7 @@
     /* COLUMNA 1: Lista de Contactos */
     .contenedoruno_hijo {
         display: flex; 
+        width: 30%;
     }
 
     /* COLUMNA 2: Chat Activo */
@@ -102,15 +136,46 @@
         padding: 10px 15px;
     }
     
-    .content_message_screen {
-        height: calc(100% - 160px);
+    .content_message_screen{
+        display: flex;
+        flex-direction: column;
+        position: relative;
         width: 100%;
+        height: calc(100% - 160px);
+        background-image: url('/foto_wp.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-attachment: fixed; 
+        z-index: 0;
+    }
+
+    .content_message_screen::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgba(240, 237, 235, 0.9);
+    }
+
+    .message_list{
+    height: auto;
+    padding-bottom: 80px;
+    flex-grow: 1;
+    overflow-y: auto;
+    z-index: 2; 
+    position: relative;
+    padding: 10px 20px;
     }
     
     .formulario_padre {
         height: 80px;
         padding: 10px 15px;
         width: 100%;
+        background-color: #f8f5f1;
     }
 }
 
@@ -155,9 +220,7 @@
         position: relative;
         width: 100%;
         height: calc(100% - 160px);
-        padding: 10px;
-        overflow-y: scroll;
-        background-image: url('/fondowhatsapp.jpg');
+        background-image: url('/foto_wp.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center; 
@@ -180,9 +243,10 @@
     height: auto;
     padding-bottom: 80px;
     flex-grow: 1;
-  /*   overflow-y: auto; */
+    overflow-y: auto;
     z-index: 2; 
-  /*   position: relative;  */
+    position: relative;
+    padding: 10px 20px;
     }
 
     /* ---scroll--- */
@@ -253,9 +317,9 @@
     .formulario_padre{
         display: flex;
         flex-direction: column;
-        height: 80px;
         width: 100%;
         padding: 10px 15px;
+        background-color: #f8f5f1;
     }
 
     .text_espera{
@@ -290,55 +354,6 @@
             transform: rotate(360deg);
         }
     }
-
-
-    .loading-spinner-container-chat .text_espera {
-        font-size: 14px;
-        font-family: "Roboto";
-        margin-top: 15px;
-        font-weight: 400;
-    }
-
-    .loading-spinner-container-chat {
-        font-family: "Roboto";
-    }
-    
-    .header_message_hijo{
-        display: flex;
-        flex-direction: row;
-        padding: 10px 15px;
-        width: 100%;
-        height: 80px;
-    }
-
-    /* Animación del Loading en la lista de mensajes */
-
-    .loading-spinner-container-chat {
-        width: 100%;
-        height: 100%; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #128c7e;
-        font-size: 1.1em;
-    }
-
-    .spinner-animation-chat {
-        font-size: 2em; 
-        margin-bottom: 15px;
-        animation: spin-chat 1s linear infinite; 
-    }
-
-    @keyframes spin-chat {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
 
     .loading-spinner-container-chat .text_espera {
         font-size: 14px;

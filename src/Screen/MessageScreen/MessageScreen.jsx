@@ -40,7 +40,7 @@ function MessageScreen() {
                             </div>
                             
                     
-                            <div className={`contenedordos_hijo ${isChatDetailHidden 
+                            <div className={`contenedordos_hijo_ms ${isChatDetailHidden 
                             ? 'mobile-hidden' 
                             : ''}`}>
 

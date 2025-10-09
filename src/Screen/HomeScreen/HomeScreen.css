@@ -40,7 +40,6 @@
     background-color: #f8f5f1;
     border: #e3e9e1 solid 1px;
     height: 100%;
-    width: 30%;
 }
 
 .content_chatList{
@@ -49,6 +48,25 @@
     width: 100%;
     height: 80px;
     background-color: #eee;
+}
+
+
+.chatList{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background: #eee;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.titulo_left{
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .contenedor_list_contact{
@@ -90,13 +108,13 @@
     }
 
     .contenedoruno_hijo{
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        background-color: #f8f5f1;
-        border: #e3e9e1 solid 1px;
-        height: 100%;
-        width: 50%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #f8f5f1;
+    border: #e3e9e1 solid 1px;
+    height: 100%;
+    width: 30%;
     }
 
     .content_chatList{
@@ -105,7 +123,6 @@
     
     } 
 
-    
     .chatList{
     display: flex;
     flex-direction: row;
