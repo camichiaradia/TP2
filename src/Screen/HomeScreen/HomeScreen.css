@@ -1,61 +1,55 @@
-
-/* RESPONSIVE Mobile (Hasta 575px)*/
-
 /* ---------- INICIA ACÁ ---------- */
-
-.hero {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-}
-
-.contenthero_basepadre,
-.contenedorhero_basehijo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column; 
-}
-/* 
+/* MEDIA QUERY: 380px (RESPONSIVE Mobile) */
 
 @media (min-width: 380px) {
-     */
-/* ------------------------------------------- */
-/* COLUMNA 1: LISTA DE CONTACTOS (contenedoruno_hijo) */
-/* ------------------------------------------- */
-.contenedoruno_hijo {
-    width: 100%; 
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #f8f5f1;
-    border: #e3e9e1 solid 1px;
-}
+    .hero {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+    }
 
-.content_chatList{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80px;
-    background-color: #eee;
-    flex-shrink: 0;
-}
+    .contenthero_basepadre,
+    .contenedorhero_basehijo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
 
-.titulo_left {
-    font-size: 18px; 
-}
+    /* COLUMNA 1: LISTA DE CONTACTOS (contenedoruno_hijo) */
 
-/* ------------------------------------------- */
-/* COLUMNA 2: BIENVENIDA (contenedordos_hijo) */
-/* ------------------------------------------- */
-.contenedordos_hijo {
-    display: none; 
-    width: 0;
-    height: 0;
-}
+    .contenedoruno_hijo {
+        width: 100%; 
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #f8f5f1;
+        border: #e3e9e1 solid 1px;
+    }
 
+    .content_chatList{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80px;
+        background-color: #eee;
+        flex-shrink: 0;
+    }
+
+    .titulo_left {
+        font-size: 18px; 
+    }
+
+
+    /* COLUMNA 2: BIENVENIDA (contenedordos_hijo) */
+
+    .contenedordos_hijo {
+        display: none; 
+    }
+
+}
 
 /* ------------------------------------------- */
 /* MEDIA QUERY: 768px (Tabletas - VISTA DOBLE COLUMNA) */
@@ -84,8 +78,15 @@
         background-color: #f8f5f1;
         border: #e3e9e1 solid 1px;
         height: 100%;
-        width: 30%;
+        width: 50%;
     }
+
+    .content_chatList{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e2e2e2;
+    
+    } 
+
 
     /* COLUMNA 2: Mensaje de Bienvenida - VISIBLE */
 
@@ -117,7 +118,7 @@
     
     .content_hijo{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap:10px;
         width: 100%;
@@ -141,11 +142,6 @@
         font-size: 14px;
     }
 
-    .content_chatList{
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-        border-bottom: 1px solid #e2e2e2;
-    
-    } 
 
 
 }

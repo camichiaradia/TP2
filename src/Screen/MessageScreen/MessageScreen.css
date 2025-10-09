@@ -1,79 +1,79 @@
 
-/* RESPONSIVE Mobile */
-
 /* ---------- INICIA ACÁ ---------- */
+/* MEDIA QUERY: 380px (RESPONSIVE Mobile) */
 
-.hero {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
+@media (min-width: 380px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .contenthero_basepadre,
+    .contenedorhero_basehijo {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column; 
+        padding: 0px;
+    }
+
+
+    /* Esta clase oculta el elemento */
+    .mobile-hidden {
+        display: none !important;
+    }
+
+    /* COLUMNA 1: LISTA DE CONTACTOS (contenedoruno_hijo) */
+
+    .contenedoruno_hijo {
+        width: 100%; 
+        height: 100%;
+        flex-direction: column;
+        background-color: #f8f5f1;
+    }
+
+    .content_chatList {
+        height: 80px;
+    }
+
+
+    /* COLUMNA 2: CHAT ACTIVO (contenedordos_hijo) */
+
+    .contenedordos_hijo {
+        width: 100%; 
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .header_message_hijo {
+        height: 80px;
+        padding: 10px 10px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .content_message_screen {
+        height: calc(100% - 160px);
+        padding: 5px;
+    }
+
+    .formulario_padre {
+        height: 80px;
+        padding: 5px 10px;
+    }
+
+    .titulo_left {
+        font-size: 18px;
+    }
+
 }
 
-.contenthero_basepadre,
-.contenedorhero_basehijo {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column; 
-    padding: 0px;
-}
 
-
-/* Esta clase oculta el elemento */
-.mobile-hidden {
-    display: none !important;
-}
-
-/* COLUMNA 1: LISTA DE CONTACTOS (contenedoruno_hijo) */
-
-.contenedoruno_hijo {
-    width: 100%; 
-    height: 100%;
-    flex-direction: column;
-    background-color: #f8f5f1;
-}
-
-.content_chatList {
-    height: 80px;
-}
-
-
-/* COLUMNA 2: CHAT ACTIVO (contenedordos_hijo) */
-
-.contenedordos_hijo {
-    width: 100%; 
-    height: 100%;
-    overflow-y: hidden;
-}
-
-.header_message_hijo {
-    height: 80px;
-    padding: 10px 10px;
-    gap: 20px;
-    width: 100%;
-}
-
-.content_message_screen {
-    height: calc(100% - 160px);
-    padding: 5px;
-}
-
-.formulario_padre {
-    height: 80px;
-    padding: 5px 10px;
-}
-
-.titulo_left {
-    font-size: 18px;
-}
-
-
-
-/* ------------------------------------------- */
 /* MEDIA QUERY: 768px (Tabletas - VISTA DOBLE COLUMNA) */
-/* ------------------------------------------- */
+
 @media (min-width: 768px) {
     
     .contenedoruno_hijo.mobile-hidden,
@@ -104,6 +104,7 @@
     
     .content_message_screen {
         height: calc(100% - 160px);
+        width: 100%;
     }
     
     .formulario_padre {
@@ -130,8 +131,8 @@
         height: 100%;
         background-color: #f8f5f1;
         border: #e3e9e1 solid 1px;
-        scrollbar-width: thin;
-        overflow-y: auto;
+/*         scrollbar-width: thin;
+        overflow-y: auto; */
     }
 
     .titulo_left, .titulo_right {
@@ -153,7 +154,7 @@
         flex-direction: column;
         position: relative;
         width: 100%;
-        height: calc(100% - 150px);
+        height: calc(100% - 160px);
         padding: 10px;
         overflow-y: scroll;
         background-image: url('/fondowhatsapp.jpg');
@@ -179,12 +180,15 @@
     height: auto;
     padding-bottom: 80px;
     flex-grow: 1;
-    overflow-y: auto;
+  /*   overflow-y: auto; */
     z-index: 2; 
-    position: relative; 
+  /*   position: relative;  */
     }
 
     /* ---scroll--- */
+    .content_message_screen::-webkit-scrollbar {
+        width: 8px;
+
     .content_message::-webkit-scrollbar {
         width: 8px;
     }
@@ -348,8 +352,8 @@
     }
 
 
+    }
 }
-
 
 
 /* ---------- TERMINA ACÁ ---------- */
@@ -511,8 +515,8 @@
  */
 
 /*     escritorio */
-/* @media screen and (min-width: 1440px){
+/*  @media screen and (min-width: 1440px){
     .section_button_fixed{
         display: flex;
     }
-} */
+}  */
