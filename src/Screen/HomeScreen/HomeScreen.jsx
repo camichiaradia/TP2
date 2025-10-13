@@ -11,15 +11,33 @@ const HomeScreen = () => {
 
                             <div className='contenedoruno_hijo'> 
                                 <div className='content_chatList'>
-                                    <div className='chatList'>
-                                        <h1 className='titulo_left'>
-                                            Chats
-                                        </h1>
-                                        <span className='icons_right_chatList'>
-                                            <i className="bi bi-pencil-square"></i>
-                                            <i className="bi bi-list"></i>
-                                        </span>
+                                    <div className='content_logo-wp'>
+                                        <img className='logo_wp' src='whatsappok.svg' alt='logo_whatsapp'>
+                                        </img>
                                     </div>
+                                    <div className='content_botones'>
+                                        <button className='icon_botones'>
+                                            <i className="bi bi-pencil-square"></i>
+                                        </button>
+                                        <button className='icon_botones'>
+                                            <i className="bi bi-list"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="chat-filters">
+                                    <button className="filter-button active">
+                                        Todos
+                                    </button>
+                                    <button className="filter-button">
+                                        No Leídos
+                                        <span className="notification-badge">3</span>
+                                    </button>
+                                    <button className="filter-button">
+                                        Favoritos
+                                    </button>
+                                    <button className="filter-button">
+                                        Grupos
+                                    </button>
                                 </div>
                             <ContactList/>
                             </div>

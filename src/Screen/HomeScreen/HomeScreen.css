@@ -2,7 +2,7 @@
 /* MEDIA QUERY: 380px (RESPONSIVE Mobile) */
 
 @media (min-width: 320px) { 
-        .hero{
+    .hero{
         display: flex;
         flex-direction: column;
         background-color: #ffffff;
@@ -30,7 +30,6 @@
         height: 100%;
     }
 
-
     /* COLUMNA 1: LISTA DE CONTACTOS (contenedoruno_hijo) */
 
     .contenedoruno_hijo{
@@ -44,12 +43,36 @@
 
     .content_chatList{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         height: 80px;
         background-color: #eee;
     }
 
+    .content_logo-wp{
+        display: flex;
+        height: 80px;
+        background: #eee;
+    }
+    .logo_wp{
+        width: 100px;
+        margin-left: 15px;
+    }
+
+    .content_botones{
+        font-size: 20px;
+        border: none;
+        background-color: transparent;
+        margin-right: 15px;
+    }
+    
+    .icon_botones{
+        padding-left: 10px;
+        font-size: 20px;
+        border: none;
+    }
 
     .chatList{
         display: flex;
@@ -79,15 +102,63 @@
         padding: 10px;
     }
 
+    .chat-filters {
+        display: flex;
+        gap: 5px;
+        padding: 10px 15px;
+        background-color: #f8f5f1;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        overflow-x: auto;
+    }
+
+    
+    .filter-button {
+    background-color: transparent;
+    border: 1px solid #d9dbde;
+    color: #4f5864;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    }
+
+
+    .filter-button.active {
+    background-color: #008069;
+    border-color: #008069;
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .filter-button:not(.active):hover {
+    background-color: #f7f7f7;
+    border-color: #c0c2c4;
+    }
+
+
+    .notification-badge {
+        font-size: 10px;
+        padding: 1px 5px;
+    }
+
+
     /* COLUMNA 2: BIENVENIDA (contenedordos_hijo) */
 
     .contenedordos_hijo {
         display: none; 
     }
 
+}
     
 
-}
+
 
 /* ------------------------------------------- */
 /* MEDIA QUERY: 768px (Tabletas - VISTA DOBLE COLUMNA) */
@@ -142,6 +213,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
+
     /* COLUMNA 2: Mensaje de Bienvenida - VISIBLE */
 
     .contenedordos_hijo{
@@ -184,12 +256,66 @@
     }
 
 
-
 }
 
 
-/* @media (min-width: 1024px)  */
+@media (min-width: 1024px){
 
+    .chat-filters {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background-color: #f8f5f1;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    }
+
+    .filter-button {
+    background-color: transparent;
+    border: 1px solid #d9dbde;
+    color: #4f5864;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    }
+
+
+    .filter-button.active {
+    background-color: #008069;
+    border-color: #008069;
+    color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .filter-button:not(.active):hover {
+    background-color: #f7f7f7;
+    border-color: #c0c2c4;
+    }
+
+    .notification-badge {
+        background-color: #f0f2f5;
+        color: #008069;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 2px 6px;
+        border-radius: 10px;
+        line-height: 1;
+    }
+
+
+    .filter-button.active .notification-badge {
+        background-color: #fff; 
+        color: #008069;
+    }
+}
 
 /* ---------- INICIA ACÁ ---------- */
 /* .hero{
