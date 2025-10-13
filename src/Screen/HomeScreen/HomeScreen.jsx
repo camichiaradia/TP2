@@ -24,9 +24,6 @@ const HomeScreen = () => {
                                         </button>
                                     </div>
                                 </div>
-                                <div>
-                                    <BarraBuscador/>
-                                </div>
                                 <div className="chat-filters">
                                     <button className="filter-button active">
                                         Todos
