@@ -17,12 +17,15 @@ const HomeScreen = () => {
                                     </div>
                                     <div className='content_botones'>
                                         <button className='icon_botones'>
-                                            <i className="bi bi-pencil-square"></i>
+                                            <i className="bi bi-camera"></i>
                                         </button>
                                         <button className='icon_botones'>
                                             <i className="bi bi-list"></i>
                                         </button>
                                     </div>
+                                </div>
+                                <div>
+                                    <BarraBuscador/>
                                 </div>
                                 <div className="chat-filters">
                                     <button className="filter-button active">
