@@ -113,33 +113,33 @@
 
     
     .filter-button {
-    background-color: transparent;
-    border: 1px solid #d9dbde;
-    color: #4f5864;
-    padding: 6px 10px;
-    border-radius: 16px;
-    font-size: 13px;
-    font-weight: 500;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    gap: 4px;
+        background-color: transparent;
+        border: 1px solid #d9dbde;
+        color: #4f5864;
+        padding: 6px 10px;
+        border-radius: 16px;
+        font-size: 13px;
+        font-weight: 500;
+        white-space: nowrap;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 4px;
     }
 
 
     .filter-button.active {
-    background-color: #008069;
-    border-color: #008069;
-    color: #fff;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        background-color: #008069;
+        border-color: #008069;
+        color: #fff;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     }
 
 
     .filter-button:not(.active):hover {
-    background-color: #f7f7f7;
-    border-color: #c0c2c4;
+        background-color: #f7f7f7;
+        border-color: #c0c2c4;
     }
 
 
@@ -148,6 +148,47 @@
         padding: 1px 5px;
     }
 
+    
+    .contenedor_buscador{
+        margin: 15px;
+        background-color: #f8f5f1;
+        border-radius: 20px;
+    }
+
+    .buscador_box{
+        display: flex;
+        align-items: center;
+        background-color: #f8f5f1;
+        border-radius: 20px;
+        padding: 8px 15px;
+        width: 330px;
+        max-width: 90vw;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon_buscador{
+        width: 20px;
+        height: 20px;
+        fill: #8e8e8e;
+        margin-right: 10px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .buscador_box input[type="text"] {
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        color: #333;
+        padding: 0;
+        background-color: #f8f5f1;
+        border-radius: 20px;
+    }
+
+    .buscador_box {
+        color: #8e8e8e;
+    }  
 
     /* COLUMNA 2: BIENVENIDA (contenedordos_hijo) */
 
@@ -315,7 +356,50 @@
         background-color: #fff; 
         color: #008069;
     }
+
+    .contenedor_buscador{
+        margin: 15px;
+        background-color: #f8f5f1;
+        border-radius: 20px;
+    }
+
+    .buscador_box{
+        display: flex;
+        align-items: center;
+        background-color: #f8f5f1;
+        border-radius: 20px;
+        padding: 8px 15px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+        width: 330px;
+        max-width: 90vw;
+    }
+
+    .icon_buscador{
+        width: 20px;
+        height: 20px;
+        fill: #8e8e8e;
+        margin-right: 10px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .buscador_box input[type="text"] {
+        flex-grow: 1;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        color: #333;
+        padding: 0;
+        background-color: #f8f5f1;
+        border-radius: 20px;
+    }
+
+    .buscador_box {
+        color: #8e8e8e;
+    }  
 }
+
+
 
 /* ---------- INICIA ACÁ ---------- */
 /* .hero{

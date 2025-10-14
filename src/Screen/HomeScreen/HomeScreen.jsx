@@ -24,6 +24,14 @@ const HomeScreen = () => {
                                         </button>
                                     </div>
                                 </div>
+                                <div className='contenedor_buscador'>
+                                    <div className='buscador_box'>
+                                        <button className='icon_buscador'>
+                                            <i className="bi bi-search"></i>
+                                        </button>
+                                        <input type="text" placeholder="Preguntar a Meta AI o buscar"></input>
+                                    </div>
+                                </div>
                                 <div className="chat-filters">
                                     <button className="filter-button active">
                                         Todos
